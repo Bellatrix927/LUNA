@@ -1,0 +1,48 @@
+#introduction
+print("hello,I am a Calculator")
+#for the user to  select an operation 
+print("Chose an operation")
+print("1 . ADDITION ")
+print("2 . SUBRACTION ")
+print("3 . MULTIPLICATION")
+print("4 . DIVISION")
+print("press q to stop the program")
+#instruction for the user about the limits of the operations
+print("for the operation, please chose number between 1 and 4 only")
+
+def f():
+    #get input from the user
+    opr=input("Enter the number of the operation here : ")
+
+
+    if opr == "1":
+        
+       num1=int(input("enter 1st number:"))
+       num2=int(input("enter 2nd number:"))
+       print(num1,"+",num2,"=",num1+num2)
+
+    elif opr == "2":
+        num1=int(input("enter 1st number:"))
+        num2=int(input("enter 2nd number:"))
+        print(num1,"-",num2,"=",num1-num2)
+
+    elif opr == "3":
+        num1=int(input("enter 1st number:"))
+        num2=int(input("enter 2nd number:")) 
+        print(num1,"x",num2,"=",num1*num2)
+
+    elif opr == "4":
+        num1=int(input("enter 1st number:"))
+        num2=int(input("enter 2nd number:"))
+        print(num1,"/",num2,"=",num1/num2)
+
+    elif opr == "q":
+          exit()
+
+    else:
+        print("INVALID INPUT")
+
+
+    f()
+f()    
+        
